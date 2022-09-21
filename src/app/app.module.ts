@@ -8,6 +8,9 @@ import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { FormacionYHabilidadesComponent } from './componentes/formacion-yhabilidades/formacion-yhabilidades.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 
+import { PortfolioService } from './servicios/portfolio.service';
+import { HttpClientModule} from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +21,10 @@ import { FooterComponent } from './componentes/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
