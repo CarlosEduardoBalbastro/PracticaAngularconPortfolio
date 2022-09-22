@@ -1,7 +1,7 @@
 
 <!-- menu navegacion -->
 
-<nav class="navbar navbar-expand-sm bg-gradient text-bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-gradient text-bg-dark navbar-dark" id="menuNavegacion">
     <div class="container-fluid">
       <!-- <a class="navbar-brand mx-3" href="https://github.com/CarlosEduardoBalbastro"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github text-white" viewBox="0 0 16 16">
         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
@@ -34,17 +34,51 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sobreMi">Login</a>
+            <!-- <a class="nav-link btn text-decoration-none border-0 text-white" href="#" type="button" target="_blank">Login</a> -->
+               
+            <!-- boton que genera modal -->
+  
+    <a type="button"  class="nav-item btn text-decoration-none border-0 text-white" data-bs-toggle="modal" data-bs-target="#login">
+      Login</a> 
+  
+     
+
           </li>
-          <!-- <li class="nav-item dropdown"> -->
-            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Idioma</a> -->
-            <!-- <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/index_english.html">Inglés</a></li>
-              <li><a class="dropdown-item" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/index_portugues.html">Portugués</a></li>
-             
-            </ul> -->
-          <!-- </li> -->
+          
+      <!-- Modal -->
+      <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+            
+        <div class="modal-dialog modal-fullscreen-sm-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <div class="modal-title" id="loginModal">2022</div> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+            </div>
+            <div class="modal-body w-100">
+              <form>
+                <div class="mb-3">
+                  <label for="inPutEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="inPutEmail" aria-describedby="emailHelp" placeholder="Email Address">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="inPutPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inPutPassword" placeholder="Password">
+                </div>
+                <!-- <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div> -->
+                <button type="submit" class="btn btn-dark d-block w-100">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      
            </ul>
+
       </div>
     </div>
   </nav>
