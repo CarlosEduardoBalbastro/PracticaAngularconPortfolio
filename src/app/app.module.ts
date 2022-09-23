@@ -9,7 +9,8 @@ import { FormacionYHabilidadesComponent } from './componentes/formacion-yhabilid
 import { FooterComponent } from './componentes/footer/footer.component';
 
 import { PortfolioService } from './servicios/portfolio.service';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
